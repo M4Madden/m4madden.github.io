@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- WIP TODO: implement size for mobile -->
+    <title>matthew madden</title>
+    <meta name="description" content="Matt Madden — CS student and homelab enthusiast">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="path">~<span class="sep">/</span>matt<span class="sep">/</span>index.html</div>
+        <div class="clock" id="clock"></div>
+    </div>
+    <main>
+        <section class="block about">
+            <p class="big">MATTHEW MADDEN</p>
+            <p class="code" id="code"></p>
+            <div class="bio">
+                <p> 
+                    Hello, I am a CompSci major at Bridgewater State University.
+                    My favorite language is c++. In my free time, I love tinkering with my homelab as I have a passion for self hosting
+                    services that make life easier. I also enjoy building and flying fpv drones and snowboarding. 
+                    These hobbies are great because they allow me to keep my wallet light!
+                </p>
+            </div>
+        </section>
+
+    <section class="block">
+        <p class="prompt"><span class="term">$</span> <span class="cmd">cat wip.log</span></p>
+        <ul class="log">
+            <li>
+                <span class="dot active"></span>
+                <span class="tag"> Hydroponics </span>
+                <span class="msg"> A modular hydroponics system using an esp32s3 </span>
+            </li>
+
+            <li>
+                <span class="dot blocked"></span>
+                <span class="tag"> Wigglegram Camera </span>
+                <span class="msg">Raspberry Pi Zero 2W are always out of stock :(</span>
+            </li>
+
+            <li>
+                <span class="dot blocked"></span>
+                <span class="tag">Project</span>
+                <span class="msg">Description</span>
+            </li>
+        </ul>
+    </section>
+
+    <section class="block">
+        <p class="prompt"><span class="term">$</span> <span class="cmd">ls ~/projects</span></p>
+        <div class="projects">
+
+            <article class="project">
+                <h3>m4madden.github.io</h3>
+                <p>THIS WEBPAGE</p>
+            </article>
+
+            <article class="project">
+                <h3>Project</h3>
+                <p>Description</p>
+            </article>
+
+            <article class="project">
+                <h3>Project</h3>
+                <p>Description</p>
+            </article>
+
+            <article class="project">
+                <h3>Project</h3>
+                <p>Description</p>
+            </article>
+
+        </div>
+
+    
+    </section>
+
+    <section class="block">
+        <p class="prompt"><span class="term">$</span> <span class="cmd">contact --list</span></p>
+        <ul class="contact-list">
+            <li><span class="key">github</span> <a href="https://github.com/m4madden">github.com/m4madden</a></li>
+            <li><span class="key">email</span> <a href="mailto:mattflv@gmail.com">mattflv@gmail.com</a></li>
+        </ul>
+    </section>
+
+    </main>
+    <footer>
+        <span>matt.os v1.0.0</span>
+    </footer>   
+    <script src="type.js"></script>
+</body>
