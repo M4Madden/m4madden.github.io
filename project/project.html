@@ -19,23 +19,36 @@ project.html must
     <title>matthew madden</title>
     <meta name="description" content="Matt Madden — CS student and homelab enthusiast">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="project.css">
 </head>
 <body>
-    <div class="topbar">
-        <div class="path">~<span class="sep">/</span>matt<span class="sep">/</span>project.html</div>
-        <div class="clock" id="clock"></div>
-    </div>
-    <main>
-        <section class="block about">
-            <p class="big">MY PROJECTS</p>
-            <p class="code" id="code"></p>
-            <div class="bio">
-                <p> 
-                    Here you can find my completed and WIP projects! Github links to be added as repos become 
-                    populated.
-                </p>
+    <div class="container-fluid">
+        <div class="row topbar align-items-center py-2 px-3 border-bottom">
+            <div class="path">~<span class="sep">/</span>matt<span class="sep">/</span>project.html</div>
+        
+            <div class="col-auto">
+                <span class="clock" id="clock"></span>
             </div>
-        </section>
-    </main>
+        </div>
+
+        <main class="row">
+            <section class="block about col-12 col-md-8 offset-md-2 py-5">
+                <p class ="big">MY PROJECTS</p>
+                <p class="code" id="code"></p>
+                <div class="bio">
+                    <p>
+                        Here you can find my completed and WIP projects! Github links to be added as repos become 
+                        populated. 
+                    </p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <span>matt.os v1.0.0</span>
+    </footer>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script src="type.js"></script>
+    
 </body>
+
