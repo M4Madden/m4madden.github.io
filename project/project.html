@@ -1,6 +1,6 @@
 <!---
 index.html must have a link to project.html
-project.html must 
+project.html must
     use embedded or external CSS (Not inline)
     use @media
     use bootstrap Grid System
@@ -13,42 +13,99 @@ project.html must
 
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>matthew madden</title>
-    <meta name="description" content="Matt Madden — CS student and homelab enthusiast">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="project.css">
-</head>
-<body>
-    <div class="container-fluid">
-        <div class="row topbar align-items-center py-2 px-3 border-bottom">
-            <div class="path">~<span class="sep">/</span>matt<span class="sep">/</span>project.html</div>
-        
-            <div class="col-auto">
-                <span class="clock" id="clock"></span>
-            </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>matthew madden | projects</title>
+        <meta name="description" content="Matt Madden — CS student and homelab enthusiast">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="stylesheet" href="project.css">
+    </head>
+
+    <body>
+        <div class="topbar">
+            <div class="path">~<span class="sep">/</span>matt<span class="sep">/</span>project<span class="sep">/</span>project.html</div>
+            <div class="clock" id="clock"></div>
         </div>
 
-        <main class="row">
-            <section class="block about col-12 col-md-8 offset-md-2 py-5">
-                <p class ="big">MY PROJECTS</p>
-                <p class="code" id="code"></p>
-                <div class="bio">
-                    <p>
-                        Here you can find my completed and WIP projects! Github links to be added as repos become 
-                        populated. 
-                    </p>
-                </div>
-            </section>
-        </main>
-    </div>
-    <footer>
-        <span>matt.os v1.0.0</span>
-    </footer>   
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
-    <script src="type.js"></script>
-    
-</body>
+        <main class="container">
+            <div class="row">
 
+                <section class="block about col-12">
+                    <p class="big">MY PROJECTS</p>
+                    <p class="code" id="code"></p>
+                    <div class="bio">
+                        <p>
+                            Here you can find my completed and WIP projects! Github links to be added as repos become
+                            populated.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="block col-12">
+                    <p class="prompt"><span class="term">$</span> <span class="cmd">ls ~/projects</span></p>
+                    <div class="row g-3">
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <article class="project h-100">
+                                <h3>m4madden.github.io</h3>
+                                <p>This webpage!</p>
+                            </article>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <article class="project h-100">
+                                <h3>Hydroponics</h3>
+                                <p>A modular hydroponics system using an esp32s3.</p>
+                            </article>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <article class="project h-100">
+                                <h3>TravelAgent</h3>
+                                <p>Group travel guide chatbot for COMP 470. I built the backend and LLM integration.</p>
+                            </article>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <article class="project h-100">
+                                <h3>Homelab</h3>
+                                <p>Proxmox cluster running self-hosted services.</p>
+                            </article>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <article class="project h-100">
+                                <h3>Wigglegram Camera</h3>
+                                <p>Stalled until the Raspberry Pi Zero 2W is back in stock.</p>
+                            </article>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="block col-12">
+                    <p class="prompt"><span class="term">$</span> <span class="cmd">cat comp335-final.txt</span></p>
+                    <div class="bio">
+                        <p>
+                            For the final project I am thinking of doing a job search site that uses api calls to find open positions and nearby appartments
+                            with that information, the oppertunities can be scored based on pay, nearby housing costs, and the companies glassdoor rating.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="block col-12">
+                    <p class="prompt"><span class="term">$</span> <span class="cmd"><a href="../index.html">cd ..</a></span></p>
+                </section>
+
+            </div>
+        </main>
+
+        <footer>
+            <span>matt.os v1.0.0</span>
+        </footer>
+        <script src="../type.js"></script>
+    </body>
+</html>
